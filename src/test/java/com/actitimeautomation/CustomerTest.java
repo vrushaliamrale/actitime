@@ -38,6 +38,7 @@ public class CustomerTest extends BaseClass {
         customerPage.createCustomer("Cyber Success");
         customerPage.verifyCustomer("Cyber Success");
         ExtentReportUtil.getTest().info("newly created customer verified successfully");
+        ExtentReportUtil.getTest().info("newly created customer verified successfully");
 
     }
     @AfterClass
