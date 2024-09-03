@@ -8,36 +8,12 @@
         <parameter name="username" value="UN1"/>
         <parameter name="password" value="PW1"/>
         <packages>
-            <package name="com.actitimeautomation.sample"/>
             <package name="com.actitimeautomation"/>
         </packages>
 
     </test>
 
-   <!-- <test name="Sanity1">
-        <groups>
-            <run>
-                <include name="sanity"/>
-            </run>
-        </groups>
-        <classes>
-            &lt;!&ndash; <class name="com.actitimeautomation.sample.WindowsOperationsTest"/>&ndash;&gt;
-            <class name="com.actitimeautomation.sample.TestNGAnnotations"/>
-            <class name="com.actitimeautomation.sample.SanityTestGroup"/>
-            <class name="com.actitimeautomation.sample.DataProviderExample"/>
-        </classes>
-    </test>
-
-    <test name="Regression">
-        <parameter name="browser" value="chrome"/>
-        <parameter name="username" value="UN1"/>
-        <parameter name="password" value="PW1"/>
-        <classes>
-            <class name="com.actitimeautomation.sample.RegressionTestGroup"/>
-            <class name="com.actitimeautomation.sample.WindowsOperationsTest"/>
-        </classes>
-    </test>
-
+   
     <test name="Sanity">
           <classes>
               <class name="com.actitimeautomation.sample.TestNGAnnotations">
