@@ -1,0 +1,50 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="actitime-automation" verbose="1" parallel="tests" thread-count="2">
+    <listeners>
+        <listener class-name="com.actitimeautomation.common.TestListeners"></listener>
+    </listeners>
+    <test name="Regression">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="username" value="UN1"/>
+        <parameter name="password" value="PW1"/>
+        <packages>
+            <package name="com.actitimeautomation.sample"/>
+            <package name="com.actitimeautomation"/>
+        </packages>
+
+    </test>
+
+   <!-- <test name="Sanity1">
+        <groups>
+            <run>
+                <include name="sanity"/>
+            </run>
+        </groups>
+        <classes>
+            &lt;!&ndash; <class name="com.actitimeautomation.sample.WindowsOperationsTest"/>&ndash;&gt;
+            <class name="com.actitimeautomation.sample.TestNGAnnotations"/>
+            <class name="com.actitimeautomation.sample.SanityTestGroup"/>
+            <class name="com.actitimeautomation.sample.DataProviderExample"/>
+        </classes>
+    </test>
+
+    <test name="Regression">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="username" value="UN1"/>
+        <parameter name="password" value="PW1"/>
+        <classes>
+            <class name="com.actitimeautomation.sample.RegressionTestGroup"/>
+            <class name="com.actitimeautomation.sample.WindowsOperationsTest"/>
+        </classes>
+    </test>
+
+    <test name="Sanity">
+          <classes>
+              <class name="com.actitimeautomation.sample.TestNGAnnotations">
+                  <methods>
+                     <exclude name="test2"/>
+                  </methods>
+              </class>
+          </classes>
+      </test>-->
+</suite>
